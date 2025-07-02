@@ -1,0 +1,249 @@
+body.home-bg{ 
+  background: radial-gradient(circle at center,#ff008c,#a84eff,#ff7900);
+  border-radius: 30px;
+}
+.home-cart{
+  position: absolute;
+  top: 17%;
+  left: 8%;
+  width: 85%;
+  background: linear-gradient(to bottom,#df1ccc,#a34cf0,#df1ccc);
+  padding: 15%;
+  border-radius:30px ;
+  border: 10px solid white;
+}
+
+.home-cart h1{
+  color: white;
+  font-size: 170%;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.saree-cart h1{
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  background:linear-gradient(1deg,#ff008c,#c12535,#ff7900);
+  padding: 16%;
+  border-radius: 50%;
+}
+.saree-cart img{
+  width: 27%;
+  height: 80%;
+  position: absolute;
+  top: 20%;
+  left:20%;
+}
+.menu {
+  position: absolute;
+  top: 38%;
+  left: 75%;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+.toggle {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.toggle img {
+  width: 100%;
+  height: auto;
+}
+
+.toggle.active {
+  transform: rotate(180deg); /* Rotate eye when active */
+}
+
+.circular-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.circular-menu.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.circular-menu li4 {
+  position: absolute;
+  top: -45%;
+  left: -20%;
+  transform-origin: 0 0;
+  list-style: none;
+  transition: transform 0.5s ease;
+  background-color: #f0f0f0;
+  padding: 40px 52px;
+  border-radius: 6px;
+}
+.circular-menu li1 {
+  position: absolute;
+  top: -20%;
+  left: 30%;
+  transform-origin: 0 0;
+  list-style: none;
+  transition: transform 0.5s ease;
+  background-color: #f0f0f0;
+  padding: 40px 52px;
+  border-radius: 6px;
+}
+.circular-menu li1 img{
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  width: 50%;
+}
+.circular-menu li2 {
+  position: absolute;
+  top: 30%;
+  left: -24%;
+  transform-origin: 0 0;
+  list-style: none;
+  transition: transform 0.5s ease;
+  background-color: #f0f0f0;
+  padding: 40px 70px;
+  border-radius: 6px;
+}
+.circular-menu li2 img{
+  position: absolute;
+  top: -50%;
+  left: 1%;
+  width: 50%;
+}
+.circular-menu li3 {
+  position: absolute;
+  top: -22%;
+  left: -100%;
+  transform-origin: 0 0;
+  list-style: none;
+  transition: transform 0.5s ease;
+  background-color: #f0f0f0;
+  padding: 38px 82px;
+  border-radius: 6px;
+  font-size: 120%;
+}
+.circular-menu li3 img{
+  position: absolute;
+  top: -40%;
+  left: -6%;
+  width: 50%;
+}
+.circular-menu.show li1 {
+  transform: rotate(0deg) translate(80px) rotate(0deg);
+}
+.circular-menu.show li2 {
+  transform: rotate(90deg) translate(80px) rotate(-90deg);
+}
+.circular-menu.show li3 {
+  transform: rotate(180deg) translate(80px) rotate(-180deg);
+}
+.circular-menu.show li4 {
+  transform: rotate(270deg) translate(80px) rotate(-270deg);
+}
+
+.head-cart{
+  position: absolute;
+  top: 2%;
+  left: 24%;
+  color: white;
+}
+@media (max-width: 768px) {
+  .page-bg{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head-cart{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 10px;
+  }
+  .home-cart{
+    top: 20%;
+    width: 85%;
+    height: 70%;
+  }
+  .home-cart h1{
+    position: absolute;
+    left: 20%;
+  }
+  .saree-cart img{
+    height: 30%;
+    top: 30%;
+    left: 35%;
+  }
+  .saree-cart h1{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    height: 20%;
+    width: 50%;
+  }
+  .toggle img{
+    position: absolute;
+    width: 20%;
+    top: 100%;
+    left: -50%;
+  }
+  .circular-menu li3{
+    padding: 10%;
+    height: 30%;
+    top: 90%;
+    left: -70%;
+  }
+  .circular-menu li3 img{
+    width: 50%;
+    top: -50%;
+    left: 25%;
+  }
+  .circular-menu li2{
+    padding: 15%;
+    height: 30%;
+    top: 100%;
+    left: -60%;
+  }
+  .circular-menu li2 img{
+    width: 50%;
+    top: -70%;
+    left: 25%;
+  }
+  .circular-menu li1{
+    padding: 2%;
+    height: 30%;
+    top: 90%;
+    left: -50%;
+  }
+  .circular-menu li1 img{
+    width: 50%;
+    top: 40%;
+    left: 25%;
+  }
+  .circular-menu li4{
+    padding: 15%;
+    height: 30%;
+    top: 90%;
+    left: -65%;
+  }
+  .circular-menu li4 img{
+    width: 50%;
+    top: -70%;
+    left: 25%;
+  }
+  .toggle.active{
+    position: absolute;
+    left: -80%;
+    top: 110%;
+  }
+}
+

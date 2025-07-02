@@ -1,0 +1,99 @@
+body.contact-bg{
+   background-color: rgb(161, 242, 10);
+   background-size: cover;
+    min-height: 170vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+.contact{
+  margin: 80px auto;
+  max-width: 90%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.contact-colm{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 200%;
+  flex-basis: 48%;
+  color: #676767;
+}
+.satt-card{
+  color: #000F38;
+  font-size: 25px;
+  position: absolute;
+  right: -35%;
+  
+}
+.contact-col h3 img{
+  width: 35px;
+  margin-left: 10px;
+}
+.contact-col p{
+  max-width: 450px;
+  list-style: 0.3;
+}
+.contact-colm ul li{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  margin-top: 15%;
+  gap: 10%;
+  
+}
+.msg-card{
+  position: absolute;
+  top: 12%;
+  left: 58%;
+  color: black;
+  font-size: 60%;
+}
+.contact-colm ul li img{
+  width: 35px;
+  
+}
+.contact-colm h3{
+  position: absolute;
+  top: 1%;
+}
+.contact form input, .contact form textarea{
+  display: block;
+  width: 100%;
+  background: #EBECFE;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  resize: none;
+}
+.contact-col{
+  display: block;
+  margin: 20px 0;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+@media (max-width: 768px) {
+  
+  .contact-col{
+    left: 25%;
+  }
+  .contact-colm{
+    top: 90%;
+  }
+  .msg-card{
+    left: 14%;
+    font-size: 50%;
+  }
+  .contact-colm h3{
+    top: -20%;
+    left: 16%;
+  }
+  .contact-colm ul li{
+    font-size: 60%;
+  }
+  
+}
